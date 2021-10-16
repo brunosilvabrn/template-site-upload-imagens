@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Painel De Controle</title>
+	<link rel="stylesheet" type="text/css" href="css/painel.css">
+</head>
+<body>
+	<nav>
+		<div class="painel-logo">
+			Upload Imagens
+		</div>
+		<div class="logout">
+			<a href="#">Sair</a>
+		</div>
+	</nav>
+	<main class="box">
+		<div class="options-box">
+			<h1 class="login-title">Adicionar Postagem</h1>
+			
+			<form class="form-send" action="">
+				<input class="form-send-input" type="text" name="" placeholder="Titulo">
+				<textarea class="form-send-textarea" rows="4" placeholder="Descrição"></textarea>
+				<div class="input-file-send">
+					<input type="file" id="file" class="input-file" onchange="uploadImage(this)">
+					<label for="file">
+						<span id="file-name" class="file-box">Selecionar Imagem</span>
+						<span class="file-button">
+							Selecionar Imagem
+						</span>
+					</label>
+				</div>
+				<input class="input-send" type="submit" name="" value="Publicar postagem">
+			</form>
+			<p class="option-bottom"><a href="painel.html">Voltar para o Painel.</a></p>
+		</div>
+	</main>
+	<script src="js/targetName.js"></script>
+</body>
+</html>
